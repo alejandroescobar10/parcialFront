@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://parcial-front-kappa.vercel.app/api' });
+const API = axios.create({ baseURL: 'https://parcial-front-kappa.vercel.app/' });
 
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
